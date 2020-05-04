@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/framework.css">
@@ -19,17 +19,17 @@
 <body>
 	
 	<header>
-        <div class="bg-navy">
+        <div class="bg-navy display-lg">
             <div class="wrapper row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <ul>
                         <li><a href="https://www.google.com/maps/search/65%2Fa+17th+floor+kingsland+ny/@40.7258892,-73.9438832,17z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i> 65/A, 17th Floor, Kingsland, NY</a></li>
                         <li><a href="mailto:info@consulting.com"><i class="fas fa-envelope"></i> info@consulting.com</a></li>			
                     </ul>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <ul>
-                        <li><a href="http://www.fcebook.com" target="_blank"><i class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
+                        <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
                         <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i><span>Twitter</span></a></li>
                         <li><a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a></li>
                         <li><a href="http://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-square"></i><span>Pinterest</span></a></li>
@@ -39,42 +39,46 @@
         </div>	
 		
         <div class="wrapper row">
-            <div class="col-sm-12 col-md-3 col-lg-2">
-                <img src="img/logo.jpg" alt="" class="img-responsive">
-            </div>
+			
+			<section id="top-nav">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <img src="img/logo.png" alt="" class="img-responsive">
+                </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-8">
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Cases</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Pages</a></li>
-                    </ul>
-                </nav>
-            </div>	
-       
-            <div class="col-sm-12 col-md-3 col-lg-2">
-                <p><a href="#" class="btn-pink">Contact Now</a></p>
-            </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Cases</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pages</a></li>
+                        </ul>
+                    </nav>
+                </div>       		
+			
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <p><a href="#" class="btn-pink">Contact Now</a></p>
+                </div>
+				
+			</section>	
         </div>
 
-        <div class="bg-gradient">
+        <div id="bg-gradient">
             <div class="wrapper row relative">
-                <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-12 col-md-12 col-lg-12" id="hero">
                     <h1>Welcome to Buson</h1>
-                    <p>We help you grow your business</p>
+                    <p>We help you<br> to grow your<br> business</p>
                     <p><a href="#" class="btn-pink">Learn More</a></p>
                 </div>
-				<img src="img/bg-hero.jpg" alt="" class="img-responsive">
+				<img src="img/bg-hero.jpg" alt="" class="img-responsive display-lg" id="bg-hero">
             </div>	
         </div>
 			
 	</header>
 	
-	<div class="bg-grey">
+	<section class="bg-grey">
         <main class="wrapper row">
 
             <section class="col-sm-12 col-md-6 col-lg 4">
@@ -109,7 +113,7 @@
             </section>
 			
         </main>
-	</div>	
+	</section>	
 	
 	<section class="wrapper row relative">
 		
@@ -128,7 +132,7 @@
         </div>
 	</section>
 	
-	<section class="wrapper row">
+	<section class="wrapper row" id="services">
 		
         <div class="col-sm-12 col-md-12 col-lg-12">
             <header>
@@ -146,7 +150,7 @@
 			</div>
 		</section>
 		
-		<section class="col-sm-12 col-md-6 col-lg-4">
+		<section class="col-sm-12 col-md-6 col-lg-4" >
 			<img src="img/notebook.jpg" alt="" class="img-responsive">
 			<header>
                 <h3>Trades &amp; Stocks</h3>
@@ -186,7 +190,7 @@
             </div>
 
             <div class="col-md-6 col-lg-6">
-                <img src="img/bg-completed-cases.jpg" alt="" class="img-responsive">
+                <img src="img/bg-completed-cases.jpg" alt="" class="img-responsive display-md">
             </div>
 
         </div>
@@ -254,13 +258,13 @@
         
 	</section>
 	
-	<section class="bg-grey">
+	<section class="bg-grey" id="closing">
         <div class="wrapper row">
 			
             <div class="col-sm-12 col-md-6 col-lg-3">				
-                <img src="img/logo.jpg" alt="" class="img-responsive">
+                <img src="img/logo.png" alt="" class="img-responsive">
                 <div>
-                    <p>Wiggle room, where the metal hits the meat baseline the procedure and samepage your department loop back price point gain traction. We need to future-proof this on-brand but completeley fresh, we need a recap by eod, cob or whatever comes first so not enough bandwidth, nor time vampire.</p>
+                    <p>Wiggle room, where the metal hits the meat baseline the procedure and samepage your department.</p>
                 </div>
                 <ul>
                     <li><a href="http://www.fcebook.com" target="_blank"><i class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
@@ -295,11 +299,7 @@
                     <li><a href="#">Apartment Cleaning</a></li>
                 </ul>
             </div>
-		</div>
-	</section>
-	
-	<div class="bg-navy">
-		<footer class="wrapper row">
+			
             <div class="col-sm-12 col-md-6 col-lg-3">                
                 <h2>Get in Touch</h2>                
                 <ul>
@@ -307,8 +307,12 @@
                     <li><a href="mailto:demomail@gmail.com">Demomail@gmail.com</a></li>
                     <li><a href="https://www.google.com/maps/place/New+Orleans,+LA/@30.0326996,-90.1627533,10z/data=!3m1!4b1!4m5!3m4!1s0x8620a454b2118265:0xdb065be85e22d3b4!8m2!3d29.9510658!4d-90.0715323" target="_blank">New Orleans, USA</a></li>
                 </ul>
-            </div>            
-
+            </div>
+		</div>	
+	</section>
+	
+	<div class="bg-navy">
+		<footer class="wrapper row">
             <div class="col-sm-12 col-md-12 col-lg-12">
 				<p>Copyright <i class="far fa-copyright"></i>2020 All Rights Reserved &#124; This template made with <i class="far fa-heart"></i> by Colorlib</p>
 			</div>

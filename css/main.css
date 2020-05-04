@@ -56,7 +56,7 @@
 
 /* -- FONTS-- */ 
 * {
-	font-family: 'Be Vietnam', sans-serif;
+	font-family: 'Kanit', sans-serif;
 }
 
 
@@ -66,15 +66,39 @@
 -------------------------------------------------------------- */
 li {
 	display: inline-block;
+	margin-right: 20px;
+}
+a {
+	text-decoration: none;
+	color: #F36A6D;
+}
+
+a:hover {
+	color: #F9D5D6;
 }
 
 span {
 	display: none;
 }
 
-blockquote{
-	/* do I need to float: none; here? */
-	margin: 0 auto;
+
+section {
+	margin: 50px 0;
+}
+
+h1 {
+	font-weight: 300;	
+	color: #F1A08D;
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;	
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 3em;
 }
 
 /* -- FORMS -- */ 
@@ -92,10 +116,79 @@ blockquote{
 
 /* -- HEADER-- */
 .bg-navy {
-	background-color: #020C5A;
+	background-color: #15238C;
 	color: #fff;
 }
-/* -- NAV -- */ 
+
+.bg-navy ul:last-child{
+	float: right;
+}
+
+.display-lg, .display-md {
+	display: none;
+}
+
+#top-nav div {
+	padding: 0 50px;
+}
+
+#top-nav nav {
+	margin: 0 auto;
+}
+
+#top-nav div:last-child {
+	padding-right: 50px;
+}
+
+h1 + p {
+	font-size: 4em;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #15238C;
+}
+
+img, #top-nav li, #top-nav .btn-pink {
+	margin: 40px 20px;
+}
+
+#bg-gradient{	
+	background: rgb(228,228,231);
+    background: linear-gradient(180deg, rgba(228,228,231,1) 0%, rgba(200,200,200,0) 2%, rgba(255,255,255,0) 100%);
+}
+
+#hero {
+	margin: 200px 50px;	
+}
+
+#hero + img {
+	position: absolute;
+	z-index: -3;
+	top: 275px;
+	left: 450px;
+}
+
+div p {
+	margin-bottom: 35px;
+}
+/* -- NAV -- */
+
+#services {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#top-nav {
+	margin: 30px 10px;
+}
+
+/* -- body -- */
+
+.bg-grey {
+	background-color: #EDE8E9;
+}
+
+
 
 /* -- BUTTONS -- */
 
@@ -103,20 +196,27 @@ blockquote{
     background-color: #F1A08D;
     border: none;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 	text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-	-moz-border-radius: 50px;
-	-o-border-radius: 50px;
-	-ms-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+    font-size: 20px;
+    margin: 14px 12px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 }
 
 /* -- FOOTER -- */
 
+#closing li {
+	display: block;
+}
+
+footer {
+	text-align: center;
+}
 
 
 /*--------------------------------------------------------------
@@ -125,3 +225,23 @@ blockquote{
 
 /* -- MEDIA QUERIES-- */ 
 
+@media screen and (min-width: 1200px) {
+	.display-lg {
+		display: block;		
+	}
+	
+	#bg-hero {
+		position: relative;
+		float: right;
+		z-index: -5;
+		margin-bottom: 30px;
+	}
+	
+}
+
+@media screen and (min-width: 728px) {
+	
+	.display-md {
+		display: block;
+	}
+}
