@@ -101,6 +101,12 @@ h2 {
 	font-size: 3em;
 }
 
+blockquote {
+	text-align: center;
+}
+
+
+
 /* -- FORMS -- */ 
 
 
@@ -120,7 +126,7 @@ h2 {
 	color: #fff;
 }
 
-.bg-navy ul:last-child{
+.bg-navy ul:last-child, header > .btn-pink {
 	float: right;
 }
 
@@ -128,17 +134,17 @@ h2 {
 	display: none;
 }
 
-#top-nav div {
-	padding: 0 50px;
+header nav {
+	text-align: center;
+	margin: 40px 0;
 }
 
-#top-nav nav {
-	margin: 0 auto;
+header img {
+	margin: 30px 0;
 }
 
-#top-nav div:last-child {
-	padding-right: 50px;
-}
+
+
 
 h1 + p {
 	font-size: 4em;
@@ -158,15 +164,11 @@ img, #top-nav li, #top-nav .btn-pink {
 }
 
 #hero {
-	margin: 200px 50px;	
+	margin: 200px 50px;
+	background-image: url("../img/bg-hero.jpg");
 }
 
-#hero + img {
-	position: absolute;
-	z-index: -3;
-	top: 275px;
-	left: 450px;
-}
+
 
 div p {
 	margin-bottom: 35px;
@@ -178,9 +180,7 @@ div p {
 	margin: 0 auto;
 }
 
-#top-nav {
-	margin: 30px 10px;
-}
+
 
 /* -- body -- */
 
@@ -188,6 +188,13 @@ div p {
 	background-color: #EDE8E9;
 }
 
+.fa-star {
+	color: #FAE030;
+}
+
+#outline {
+	border: solid 3px #F1A08D;
+}
 
 
 /* -- BUTTONS -- */
@@ -208,6 +215,23 @@ div p {
 	border-radius: 10px;
 }
 
+.btn-outline {
+    border: solid 2px #F1A08D;
+    color: #F1A08D;
+    padding: 10px;
+    text-align: center;
+	text-decoration: none;
+    font-size: 20px;
+    margin: 14px 12px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+
 /* -- FOOTER -- */
 
 #closing li {
@@ -217,7 +241,9 @@ div p {
 footer {
 	text-align: center;
 }
-
+#social li {
+	display: inline-block;
+}
 
 /*--------------------------------------------------------------
 7.0 UTILITIES
