@@ -66,7 +66,7 @@
 -------------------------------------------------------------- */
 li {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 1.5em;
 }
 a {
 	text-decoration: none;
@@ -83,7 +83,7 @@ span {
 
 
 section {
-	margin: 50px 0;
+	margin: 3em 0;
 }
 
 h1 {
@@ -104,7 +104,6 @@ h2 {
 blockquote {
 	text-align: center;
 }
-
 
 
 /* -- FORMS -- */ 
@@ -136,11 +135,11 @@ blockquote {
 
 header nav {
 	text-align: center;
-	margin: 40px 0;
+	margin: 2em 0;
 }
 
 header img {
-	margin: 30px 0;
+	margin: 2em 0;
 }
 
 
@@ -148,30 +147,23 @@ header img {
 
 h1 + p {
 	font-size: 4em;
-	margin-bottom: 5px;
+	margin-bottom: .5em;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #15238C;
 }
 
 img, #top-nav li, #top-nav .btn-pink {
-	margin: 40px 20px;
+	margin: 3.5em 1.5em;
 }
 
-#bg-gradient{	
+#bg-hero{	
 	background: rgb(228,228,231);
     background: linear-gradient(180deg, rgba(228,228,231,1) 0%, rgba(200,200,200,0) 2%, rgba(255,255,255,0) 100%);
 }
 
-#hero {
-	margin: 200px 50px;
-	background-image: url("../img/bg-hero.jpg");
-}
-
-
-
 div p {
-	margin-bottom: 35px;
+	margin-bottom: 2.5em;
 }
 /* -- NAV -- */
 
@@ -183,6 +175,13 @@ div p {
 
 
 /* -- body -- */
+
+#outline > header:after {
+    content: " ";
+    display: block;
+    border-top: solid 3px #F1A08D;
+	width: 200px;
+  }
 
 .bg-grey {
 	background-color: #EDE8E9;
@@ -196,7 +195,18 @@ div p {
 	border: solid 3px #F1A08D;
 }
 
+#blog h3 {
+	 color:  #F1A08D;
+}
 
+#closing h2 {
+	font-size: 2em;
+	color: #15238C;
+}
+
+closing li {
+	color: #EDE8E9;
+}
 /* -- BUTTONS -- */
 
 .btn-pink {
@@ -206,8 +216,8 @@ div p {
     padding: 10px;
     text-align: center;
 	text-decoration: none;
-    font-size: 20px;
-    margin: 14px 12px;
+    font-size: 1.5em ;
+    margin: 1em .75em;
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
 	-ms-border-radius: 10px;
@@ -221,8 +231,8 @@ div p {
     padding: 10px;
     text-align: center;
 	text-decoration: none;
-    font-size: 20px;
-    margin: 14px 12px;
+    font-size: 1.5em;
+    margin: 1em 1.75em;
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
 	-ms-border-radius: 10px;
@@ -251,16 +261,14 @@ footer {
 
 /* -- MEDIA QUERIES-- */ 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 	.display-lg {
 		display: block;		
 	}
 	
 	#bg-hero {
-		position: relative;
-		float: right;
-		z-index: -5;
-		margin-bottom: 30px;
+		background: #fff url("../img/bg-hero.jpg") no-repeat right/cover;		
+		margin: 3em 0;
 	}
 	
 }
